@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+:root {
+    --bg-color: #F3FDF8;
+    --primary-color: #20D072;
+    --normal-color: #053F63;
+    --secondary-color:#B3C5D0;
+    --primary-font: 'Lexend', sans-serif;
+    --secondary-font: 'Poppins', sans-serif;
+    --title-size: 28px;
+    --subtitle-size: 24px;
+    --subtitle-sm-size: 20px;
+    --white: #fff;
+    --normal-font-size: 14px;
+    --grey: #C7D0DB;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+*::-webkit-input-placeholder {
+    color: var(--secondary-color);
+}
+*:-moz-placeholder {
+    color: var(--secondary-color);
+    opacity: 1;
+}
+*::-moz-placeholder {
+    color: var(--secondary-color);
+    opacity: 1;
+}
+*:-ms-input-placeholder {
+    color: var(--secondary-color);
+}
+*::-ms-input-placeholder {
+    color: var(--secondary-color);
+}
+*::placeholder {
+    color: var(--secondary-color);
+}
+body::-webkit-scrollbar,
+.modal-body::-webkit-scrollbar,
+.chat-container::-webkit-scrollbar,
+.message-body::-webkit-scrollbar,
+.fc-scroller::-webkit-scrollbar {
+    width: 8px;
+}
+body::-webkit-scrollbar-track,
+.modal-body::-webkit-scrollbar-track,
+.chat-container::-webkit-scrollbar-track,
+.message-body::-webkit-scrollbar-track,
+.fc-scroller::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--primary-color);
+}
+body::-webkit-scrollbar-thumb,
+.modal-body::-webkit-scrollbar-thumb,
+.chat-container::-webkit-scrollbar-thumb,
+.message-body::-webkit-scrollbar-thumb,
+.fc-scroller::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--primary-color);
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}

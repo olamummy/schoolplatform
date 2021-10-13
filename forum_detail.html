@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <link rel="stylesheet" type="text/css" href="public/css/common.css">
+    <link rel="stylesheet" type="text/css" href="public/css/forum_detail.css">
+    <script src="https://kit.fontawesome.com/166c494a50.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="public/js/forum_detail.js"></script>
+</head>
+<body>
+    <nav class="left-navigation">
+        <div class="top-left-navigation">
+            <span class="logo"></span>
+            <h2 class="welcome-msg">Welcome <span class="welcome-username">Chinedu</span></h2>
+        </div>
+        <div class="left-navigation-items">
+            <div class="left-navigation-item link" to="/home.html">
+                <i class="home-icon"></i>
+                <span>Home</span>
+            </div>
+            <div class="left-navigation-item link" to="/assignment.html">
+                <i class="assignment-icon"></i>
+                <span>Assignment</span>
+            </div>
+            <div class="left-navigation-item active-nav-item">
+                <i class="announcement-icon"></i>
+                <span>Forum</span>
+            </div>
+            <div class="left-navigation-item link" to="/messages.html">
+                <i class="messages-icon"></i>
+                <span>Messages</span>
+            </div>
+            <div class="left-navigation-item link" to="/resource.html">
+                <i class="icon fas fa-folder"></i>
+                <span>Resource</span>
+            </div>
+            <div class="left-navigation-item link" to="/schedule.html">
+                <i class="video-icon"></i>
+                <span>Schedule</span>
+            </div>
+            <div class="left-navigation-item link" to="/">
+                <i class="logout-icon"></i>
+                <span>Logout</span>
+            </div>
+        </div>
+    </nav>
+    <main class="main">
+        <nav class="top-navigation">
+            <h2 class="title">Forum</h2>
+            <div class="top-left-nav-items">
+                <img src="public/img/face.jpg" class="profile-picture link" to="/profile.html" />
+                <div class="notification-bell">
+                    <i class="bell-icon fas fa-bell"></i>
+                </div>
+            </div>
+        </nav>
+        <section class="container">
+            <div class="back-button-container link" to="/forum.html">
+                <i class="fas fa-angle-left"></i>
+                <span>Back</span>
+            </div>
+            <p class="assignment-title">Lecture Rescheduling</p>
+
+            <div class="post">
+                <div class="post-header">
+                    <div class="post-left">
+                        <div class="post-author-picture-container">
+                            <img src="./public/img/face.jpg" class="post-author-picture" />
+                        </div>
+                        <div class="post-author-container">
+                            <p class="post-author">Mary Jane</p>
+                            <p class="post-timestamp">12min ago</p>
+                        </div>
+                    </div>
+                    <button class="post-primary-button">Kotlin</button>
+                </div>
+                <p class="post-body">
+                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes….. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes….. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes
+                </p>
+            </div>
+            <div>
+                <div class="answer-container">
+                    <input type="text" class="answer message" cat="new" placeholder="Type your comment" />
+                    <i class="fas fa-paper-plane send"></i>
+                </div>
+                <button type="submit" class="submit-button send">Comment</button>
+            </div>
+
+            <div class="comment-list">
+                <div class="comment">
+                    <div class="comment-header">
+                        <div>
+                            <img src="/public/img/face.jpg" class="commenter-picture" />
+                            <p class="commenter">Ibrahim Aliyu</p>
+                        </div>
+                        <p class="post-timestamp">11min ago</p>
+                    </div>
+                    <p class="comment-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sed sint, autem repudiandae incidunt inventore veniam cumque quas quaerat, vero rerum molestias quia, rem officia eum animi consequatur error mollitia!</p>
+                    <div class="comment-footer">
+                        <div class="reply-comment">
+                            <div>
+                                <i class="fas fa-reply"></i>
+                                <span>Reply</span>
+                            </div>
+
+                            <div class="reply-input-container primary-border-radius">
+                                <input class="reply-input message" cat="reply" post-id="1" type="text" name="reply" placeholder="Type your reply">
+                                <i class="fas fa-paper-plane send"></i>
+                            </div>
+                        </div>
+                        <div class="comments-count replies-collapser">
+                            <i class="fas fa-angle-up"></i>
+                            <span>329</span>
+                        </div>
+                    </div>
+
+                    <div class="comment-replies hidden">
+                        <div class="comment comment-reply">
+                            <div class="comment-header">
+                                <div>
+                                    <img src="/public/img/face.jpg" class="commenter-picture" />
+                                    <p class="commenter">Ibrahim Aliyu</p>
+                                </div>
+                                <p class="post-timestamp">11min ago</p>
+                            </div>
+                            <p class="comment-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sed sint, autem repudiandae incidunt inventore veniam cumque quas quaerat, vero rerum molestias quia, rem officia eum animi consequatur error mollitia!</p>
+                        </div>
+
+                        <div class="comment comment-reply">
+                            <div class="comment-header">
+                                <div>
+                                    <img src="/public/img/face.jpg" class="commenter-picture" />
+                                    <p class="commenter">Ibrahim Aliyu</p>
+                                </div>
+                                <p class="post-timestamp">11min ago</p>
+                            </div>
+                            <p class="comment-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sed sint, autem repudiandae incidunt inventore veniam cumque quas quaerat, vero rerum molestias quia, rem officia eum animi consequatur error mollitia!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="comment">
+                    <div class="comment-header">
+                        <div>
+                            <img src="/public/img/face.jpg" class="commenter-picture" />
+                            <p class="commenter">Ibrahim Aliyu</p>
+                        </div>
+                        <p class="post-timestamp">11min ago</p>
+                    </div>
+                    <p class="comment-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sed sint, autem repudiandae incidunt inventore veniam cumque quas quaerat, vero rerum molestias quia, rem officia eum animi consequatur error mollitia!</p>
+                    <div class="comment-footer">
+                        <div class="reply-comment">
+                            <div>
+                                <i class="fas fa-reply"></i>
+                                <span>Reply</span>
+                            </div>
+
+                            <div class="reply-input-container primary-border-radius hidden">
+                                <input class="reply-input message" type="text" cat="reply" post-id="1" name="reply" placeholder="Type your reply">
+                                <i class="fas fa-paper-plane send"></i>
+                            </div>
+                        </div>
+                        <div class="comments-count replies-collapser">
+                            <i class="fas fa-angle-up"></i>
+                            <span>559</span>
+                        </div>
+                    </div>
+
+                    <div class="comment-replies">
+                        <div class="comment comment-reply">
+                            <div class="comment-header">
+                                <div>
+                                    <img src="/public/img/face.jpg" class="commenter-picture" />
+                                    <p class="commenter">Ibrahim Aliyu</p>
+                                </div>
+                                <p class="post-timestamp">11min ago</p>
+                            </div>
+                            <p class="comment-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sed sint, autem repudiandae incidunt inventore veniam cumque quas quaerat, vero rerum molestias quia, rem officia eum animi consequatur error mollitia!</p>
+                        </div>
+
+                        <div class="comment comment-reply">
+                            <div class="comment-header">
+                                <div>
+                                    <img src="/public/img/face.jpg" class="commenter-picture" />
+                                    <p class="commenter">Ibrahim Aliyu</p>
+                                </div>
+                                <p class="post-timestamp">11min ago</p>
+                            </div>
+                            <p class="comment-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sed sint, autem repudiandae incidunt inventore veniam cumque quas quaerat, vero rerum molestias quia, rem officia eum animi consequatur error mollitia!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,75 @@
+#calendar {
+    font-family: var(--primary-font);
+}
+.fc-scrollgrid-sync-inner {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    flex-direction: column;
+}
+.fc-toolbar-chunk {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.fc-toolbar-chunk .fc-button-primary {
+    border: 0;
+    background-color: #fff;
+    box-shadow: 0 0 0 1pt #C7D0DB;
+    border-radius: 3px 0px 3px 3px;
+}
+.fc-toolbar-chunk .fc-button-primary:hover {
+    background-color: #E8FAF1;
+}
+.fc-icon {
+    color: #BABDC1;
+}
+.fc-toolbar-chunk .fc-toolbar-title {
+    padding: 10px;
+    font-size: 14px;
+    color: #C7D0DB;
+    box-shadow: 0 0 0 1pt #C7D0DB;
+    border-radius: 3px 0px 3px 3px;
+}
+.fc-timegrid-slot-label-cushion {
+    color: #C7D0DB;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+.fc-event-main-frame {
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column-reverse !important;
+}
+.fc-event-title-container {
+    font-weight: bold;
+    height: 10px !;
+    padding: 10px 0px;
+}
+.fc-event-time {
+    position: absolute;
+    top: 30px;
+}
+.fc-col-header-cell-cushion {
+    color: var(--normal-color);
+}
+.fc-col-header-cell-cushion p:nth-child(1) {
+    font-size: 12px;
+    font-weight: 400;
+}
+.fc-col-header-cell-cushion p:nth-child(2) {
+    font-size: 18px;
+    font-weight: bold;
+}
+table, th, td, tr {
+    border: 0 !important;
+    outline: solid 0.1px rgba(199, 208, 219, 0.2);
+}
+.fc-timegrid-slot .fc-timegrid-slot-label {
+    display: none;
+}
+.tr {
+    background-color: red;
+    height: 200px !important;
+}

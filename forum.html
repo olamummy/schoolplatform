@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <link rel="stylesheet" type="text/css" href="public/css/common.css">
+    <link rel="stylesheet" type="text/css" href="public/css/forum.css">
+    <script src="https://kit.fontawesome.com/166c494a50.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="public/js/forum.js"></script>
+</head>
+<body>
+    <nav class="left-navigation">
+        <div class="top-left-navigation">
+            <span class="logo"></span>
+            <h2 class="welcome-msg">Welcome <span class="welcome-username">Chinedu</span></h2>
+        </div>
+        <div class="left-navigation-items">
+            <div class="left-navigation-item link" to="/home.html">
+                <i class="home-icon"></i>
+                <span>Home</span>
+            </div>
+            <div class="left-navigation-item link" to="/assignment.html">
+                <i class="assignment-icon"></i>
+                <span>Assignment</span>
+            </div>
+            <div class="left-navigation-item active-nav-item">
+                <i class="announcement-icon"></i>
+                <span>Forum</span>
+            </div>
+            <div class="left-navigation-item link" to="/messages.html">
+                <i class="messages-icon"></i>
+                <span>Messages</span>
+            </div>
+            <div class="left-navigation-item link" to="/resource.html">
+                <i class="icon fas fa-folder"></i>
+                <span>Resource</span>
+            </div>
+            <div class="left-navigation-item link" to="/schedule.html">
+                <i class="video-icon"></i>
+                <span>Schedule</span>
+            </div>
+            <div class="left-navigation-item link" to="/">
+                <i class="logout-icon"></i>
+                <span>Logout</span>
+            </div>
+        </div>
+    </nav>
+    <main class="main">
+        <nav class="top-navigation">
+            <h2 class="title">Forum</h2>
+            <div class="top-left-nav-items">
+                <img src="public/img/face.jpg" class="profile-picture link" to="/profile.html" />
+                <div class="notification-bell">
+                    <i class="bell-icon fas fa-bell"></i>
+                </div>
+            </div>
+        </nav>
+        <section class="container">
+            <div class="search-container">
+                <input type="text" class="search" placeholder="Search a thread or add a new thread" />
+                <p class="pcon plus-icon link" to="/add_post.html"></p>
+            </div>
+
+            <div class="posts">
+                <div class="post">
+                    <h2 class="post-title">Lecture Rescheduling</h2>
+                    <div class="post-header">
+                        <div class="post-left">
+                            <div class="post-author-picture-container">
+                                <img src="./public/img/face.jpg" class="post-author-picture" />
+                                <i class="fas fa-graduation-cap post-author-picture-icon"></i>
+                            </div>
+                            <div class="post-author-container">
+                                <p class="post-author">Mary Jane</p>
+                                <p class="post-timestamp">12min ago</p>
+                            </div>
+                        </div>
+                        <button class="post-primary-button">Kotlin</button>
+                    </div>
+                    <p class="post-body">
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes….. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes
+                    </p>
+
+                    <div class="post-footer">
+                        <div class="post-footer-left">
+                            <i class="fas fa-heart post-like-button"></i>
+                            <button class="post-comment-button link" to="forum_detail.html">
+                                <i class="fas fa-comment-dots"></i>
+                                <span>Add Comment</span>
+                            </button>
+                        </div>
+                        <div class="post-footer-right">
+                            <img class="post-responder-1" src="./public/img/face.jpg" />
+                            <img class="post-responder-2" src="./public/img/face.jpg" />
+                            <p class="post-responders-count">+11</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <h2 class="post-title">Next.Js New Update</h2>
+                    <div class="post-header">
+                        <div class="post-left">
+                            <div class="post-author-picture-container">
+                                <img src="./public/img/face.jpg" class="post-author-picture" />
+                                <i class="fas fa-graduation-cap post-author-picture-icon"></i>
+                            </div>
+                            <div class="post-author-container">
+                                <p class="post-author">Anthony Kim</p>
+                                <p class="post-timestamp">12min ago</p>
+                            </div>
+                        </div>
+                        <button class="post-primary-button">Node.Js</button>
+                    </div>
+                    <p class="post-body">
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes….. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes
+                    </p>
+
+                    <div class="post-footer">
+                        <div class="post-footer-left">
+                            <i class="fas fa-heart post-like-button"></i>
+                            <button class="post-comment-button link" to="forum_detail.html">
+                                <i class="fas fa-comment-dots"></i>
+                                <span>Add Comment</span>
+                            </button>
+                        </div>
+                        <div class="post-footer-right">
+                            <img class="post-responder-1" src="./public/img/face.jpg" />
+                            <img class="post-responder-2" src="./public/img/face.jpg" />
+                            <p class="post-responders-count">+11</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <h2 class="post-title">Happy Graduation</h2>
+                    <div class="post-header">
+                        <div class="post-left">
+                            <div class="post-author-picture-container">
+                                <img src="./public/img/face.jpg" class="post-author-picture" />
+                                <i class="fas fa-graduation-cap post-author-picture-icon"></i>
+                            </div>
+                            <div class="post-author-container">
+                                <p class="post-author">Chris Tom</p>
+                                <p class="post-timestamp">12min ago</p>
+                            </div>
+                        </div>
+                        <button class="post-primary-button">PHP</button>
+                    </div>
+                    <p class="post-body">
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes….. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes
+                    </p>
+
+                    <div class="post-footer">
+                        <div class="post-footer-left">
+                            <i class="fas fa-heart post-like-button"></i>
+                            <button class="post-comment-button link" to="forum_detail.html">
+                                <i class="fas fa-comment-dots"></i>
+                                <span>Add Comment</span>
+                            </button>
+                        </div>
+                        <div class="post-footer-right">
+                            <img class="post-responder-1" src="./public/img/face.jpg" />
+                            <img class="post-responder-2" src="./public/img/face.jpg" />
+                            <p class="post-responders-count">+11</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <h2 class="post-title">New Course Update</h2>
+                    <div class="post-header">
+                        <div class="post-left">
+                            <div class="post-author-picture-container">
+                                <img src="./public/img/face.jpg" class="post-author-picture" />
+                                <i class="fas fa-graduation-cap post-author-picture-icon"></i>
+                            </div>
+                            <div class="post-author-container">
+                                <p class="post-author">Mary Jane</p>
+                                <p class="post-timestamp">12min ago</p>
+                            </div>
+                        </div>
+                        <button class="post-primary-button">React</button>
+                    </div>
+                    <p class="post-body">
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes….. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes
+                    </p>
+
+                    <div class="post-footer">
+                        <div class="post-footer-left">
+                            <i class="fas fa-heart post-like-button"></i>
+                            <button class="post-comment-button link" to="forum_detail.html">
+                                <i class="fas fa-comment-dots"></i>
+                                <span>Add Comment</span>
+                            </button>
+                        </div>
+                        <div class="post-footer-right">
+                            <img class="post-responder-1" src="./public/img/face.jpg" />
+                            <img class="post-responder-2" src="./public/img/face.jpg" />
+                            <p class="post-responders-count">+11</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

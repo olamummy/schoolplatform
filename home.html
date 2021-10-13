@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <link rel="stylesheet" type="text/css" href="public/css/common.css">
+    <link rel="stylesheet" type="text/css" href="public/css/home.css">
+    <script src="https://kit.fontawesome.com/166c494a50.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="public/js/home.js"></script>
+
+    <!-- Calendar -->
+    <link href="./public/lib/calendar/style.css" rel="stylesheet" />
+    <!-- Calendar ends -->
+</head>
+<body>
+    <nav class="left-navigation">
+        <div class="top-left-navigation">
+            <span class="logo"></span>
+            <h2 class="welcome-msg">Welcome <span class="welcome-username">Chinedu</span></h2>
+        </div>
+        <div class="left-navigation-items">
+            <div class="left-navigation-item active-nav-item">
+                <i class="home-icon"></i>
+                <span>Home</span>
+            </div>
+            <div class="left-navigation-item link" to="/assignment.html">
+                <i class="assignment-icon"></i>
+                <span>Assignment</span>
+            </div>
+            <div class="left-navigation-item link" to="/forum.html">
+                <i class="announcement-icon"></i>
+                <span>Forum</span>
+            </div>
+            <div class="left-navigation-item link" to="/messages.html">
+                <i class="messages-icon"></i>
+                <span>Messages</span>
+            </div>
+            <div class="left-navigation-item link" to="/resource.html">
+                <i class="icon fas fa-folder"></i>
+                <span>Resource</span>
+            </div>
+            <div class="left-navigation-item link" to="/schedule.html">
+                <i class="video-icon"></i>
+                <span>Schedule</span>
+            </div>
+            <div class="left-navigation-item link" to="/">
+                <i class="logout-icon"></i>
+                <span>Logout</span>
+            </div>
+        </div>
+    </nav>
+    <main class="main">
+        <nav class="top-navigation">
+            <h2 class="title">Dashboard</h2>
+            <div class="top-left-nav-items">
+                <img src="public/img/face.jpg" class="profile-picture link" to="/profile.html" />
+                <div class="notification-bell">
+                    <i class="bell-icon fas fa-bell"></i>
+                </div>
+            </div>
+        </nav>
+        <section class="container">
+            <h2>Overview</h2>
+            <div class="top-container">
+                <div class="card assignment-card">
+                    <p class="card-icon badge-icon"></p>
+                    <p class="card-title">12</p>
+                    <p class="card-title-sm">Assignments</p>
+                </div>
+                <div class="card school-card">
+                    <p class="card-icon grad-icon"></p>
+                    <p class="card-title">Zwarttech Academy</p>
+                    <p class="card-title-sm">Schoool</p>
+                </div>
+                <div class="card course-card">
+                    <p class="card-icon milestone-icon"></p>
+                    <p class="card-title">Javascript</p>
+                    <p class="card-title-sm">Course</p>
+                </div>
+            </div>
+            <div class="main-container">
+                <div>
+                    <div class="recent-post-action-container">
+                        <p class="recent-post-title">Recent Post</p>
+                        <p class="special-arrow-icon"></p>
+                        <p class="recent-post-action">View All</p>
+                    </div>
+                    <div class="post">
+                        <h2 class="post-title">Lecture Rescheduling</h2>
+                        <div class="post-header">
+                            <div class="post-left">
+                                <div class="post-author-picture-container">
+                                    <img src="./public/img/face.jpg" class="post-author-picture" />
+                                    <i class="fas fa-graduation-cap post-author-picture-icon"></i>
+                                </div>
+                                <div class="post-author-container">
+                                    <p class="post-author">Mary Jane</p>
+                                    <p class="post-timestamp">12min ago</p>
+                                </div>
+                            </div>
+                            <button class="post-primary-button">Kotlin</button>
+                        </div>
+                        <p class="post-body">
+                            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes….. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes
+                        </p>
+    
+                        <div class="post-footer">
+                            <div class="post-footer-left">
+                                <i class="fas fa-heart post-like-button"></i>
+                                <button class="post-comment-button">
+                                    <i class="fas fa-comment-dots"></i>
+                                    <span>Add Response</span>
+                                </button>
+                            </div>
+                            <div class="post-footer-right">
+                                <img class="post-responder-1" src="./public/img/face.jpg" />
+                                <img class="post-responder-2" src="./public/img/face.jpg" />
+                                <p class="post-responders-count">+11</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-container">
+                    <h2 class="calendar-title">Next Schedule</h2>
+                    <div id="calendar"></div>
+                </div>
+            </div>
+            <div class="tables-container">
+                <div class="table-container">
+                    <table class="table">
+                        <div class="table-header">
+                            <h3 class="table-title">Assignments</h3>
+                            <span class="table-subtitle">Quickly access your recent assignments</span>
+                        </div>
+                        <tr>
+                          <th></th>
+                          <th>Col</th>
+                          <th>Col</th>
+                          <th>Action</th>
+                        </tr>
+                        <tr>
+                          <td><i class="fas fa-eye"></i></td>
+                          <td>Test</td>
+                          <td>N/A</td>
+                          <td>
+                              <a href="#">Submit Answer</a>
+                          </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-eye"></i></td>
+                            <td>Test</td>
+                            <td>N/A</td>
+                            <td>
+                                <a href="#">Submit Answer</a>
+                            </td>
+                          </tr>
+                      </table>
+                </div>
+
+                <div class="table-container">
+                    <table class="table">
+                        <div class="table-header">
+                            <h3 class="table-title">Resources</h3>
+                            <span class="table-subtitle">Resources for Javascript</span>
+                        </div>
+                        <tr>
+                          <th>Title</th>
+                          <th>Action</th>
+                        </tr>
+                        <tr>
+                          <td>Sign Contract</td>
+                          <td>
+                              <span>
+                                  <i class="fas fa-eye"></i>
+                                  View
+                              </span>
+                          </td>
+                        </tr>
+                        <tr>
+                            <td>Sign Contract</td>
+                            <td>
+                                <span>
+                                    <i class="fas fa-eye"></i>
+                                    View
+                                </span>
+                            </td>
+                          </tr>
+                      </table>
+                </div>
+
+                <div class="table-container">
+                    <table class="table">
+                        <div class="table-header">
+                            <h3 class="table-title">Misconducts</h3>
+                            <span class="table-subtitle">Quickly access your recent assignments</span>
+                        </div>
+                        <tr>
+                          <th>Misconduct</th>
+                        </tr>
+                        <tr>
+                          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                        </tr>
+                      </table>
+                </div>
+
+                <div class="table-container">
+                    <table class="table">
+                        <div class="table-header">
+                            <h3 class="table-title">Forum</h3>
+                            <span class="table-subtitle">Recent Topics</span>
+                        </div>
+                        <tr>
+                          <th>Title</th>
+                          <th>Likes</th>
+                          <th>Timestamp</th>
+                          <th>Action</th>
+                        </tr>
+                        <tr>
+                          <td>Lorem ipsum dolor...</td>
+                          <td>43 Likes</td>
+                          <td>2 Weeks ago</td>
+                          <td>
+                            <span>
+                                <i class="fas fa-eye"></i>
+                                View
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor ...</td>
+                            <td>43 Likes</td>
+                            <td>2 Weeks ago</td>
+                            <td>
+                              <span>
+                                  <i class="fas fa-eye"></i>
+                                  View
+                              </span>
+                            </td>
+                        </tr>
+                      </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Calendar -->
+    <script src="./public/lib/calendar/rolyart-calendar.js"></script>
+    <script src="./public/js/calendar.js"></script>
+    <!-- Calendar ends -->
+</body>
+</html>

@@ -1,0 +1,157 @@
+:root {
+    --form-width: 455px;
+}
+body {
+    background-color: var(--bg-color);
+    overflow: hidden;
+}
+.main {
+    display: flex;
+    height: 100vh;
+    margin: 50px 150px;
+    justify-content: space-between;
+}
+.logo {
+    height: 18vh;
+    background-size: 117.4px;
+    background: url("../icons/logo.svg") no-repeat;
+}
+.left-section-container {
+    width: 50vw;
+    height: 100vh;
+    padding-top: 20px;
+}
+.right-section-container {
+    width: 50vw;
+}
+.welcome-title {
+    color: var(--secondary-color);
+    font-size: var(--subtitle-size);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.title {
+    color: var(--normal-color);
+    font-size: var(--subtitle-size);
+}
+.left-section-footer {
+    position: absolute;
+    bottom: 0;
+}
+.left-section-footer-links, .left-section-footer-links a {
+    color: var(--secondary-color);
+    font-size: var(--normal-font-size);
+}
+.right-section,
+.right-section-header,
+.right-section-container form {
+    width: var(--form-width);
+    padding: 20px 50px;
+}
+.right-section-container {
+    height: 80vh;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.right-section {
+    align-items: center;
+    background-color: var(--white);
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: cen;
+    border-radius: 10px 0px 10px 10px;
+}
+.right-section-header {
+    display: flex;
+    justify-content: flex-start;
+}
+.right-section-header h2 {
+    font-size: var(--subtitle-sm-size);
+    opacity: 0.6;
+}
+.form .field, .form .field input {
+    width: 350px;
+    height: 50px;
+}
+.form .field {
+    outline: 0.5px solid var(--grey) 2px;
+    overflow: hidden;
+    border: 1px solid var(--grey);
+    border-radius: 5px 0px 5px 5px;
+}
+.form .field:hover {
+    border: 2px solid var(--primary-color);
+ }
+.form .field:nth-child(1) {
+    margin-bottom: 30px;
+}
+.form .field:nth-child(2) {
+    margin-bottom: 20px;
+}
+.form .field:nth-child(2) input {
+    width: 300px;
+}
+.form .field input {
+    border: 0;
+    padding: 0 20px;
+}
+.form .field input:focus {
+    outline: none;
+}
+.eye {
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.rememberme-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lbl-rememberme, .forgotpassword-link {
+    font-size: var(--normal-font-size);
+    color: #C7D0DB;
+}
+.lbl-rememberme {
+    margin-left: 10px;
+}
+#rememberme {
+    transform: scale(1.5);
+    margin-left: 4px;
+    background-color: red;
+}
+.forgotpassword-link:hover {
+    color: rgb(146, 146, 255);
+}
+.submit-button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+.submit-button {
+    background: var(--primary-color);
+    border: 0;
+    border-radius: 5px 0px 5px 5px;
+    cursor: pointer;
+    color: var(--white);
+    height: 45px;
+    opacity: 1;
+    width: 120px;
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+}
+.submit-button span {
+    margin-right: 5px;
+}
+.submit-button:hover {
+    opacity: 0.8;
+}

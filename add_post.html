@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <link rel="stylesheet" type="text/css" href="public/css/common.css">
+    <link rel="stylesheet" type="text/css" href="public/css/add_post.css">
+    <script src="https://kit.fontawesome.com/166c494a50.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="public/js/add_forum.js"></script>
+</head>
+<body>
+    <nav class="left-navigation">
+        <div class="top-left-navigation">
+            <span class="logo"></span>
+            <h2 class="welcome-msg">Welcome <span class="welcome-username">Chinedu</span></h2>
+        </div>
+        <div class="left-navigation-items">
+            <div class="left-navigation-item link" to="/home.html">
+                <i class="home-icon"></i>
+                <span>Home</span>
+            </div>
+            <div class="left-navigation-item link" to="/assignment.html">
+                <i class="assignment-icon"></i>
+                <span>Assignment</span>
+            </div>
+            <div class="left-navigation-item active-nav-item link" to="/forum.html">
+                <i class="announcement-icon"></i>
+                <span>Forum</span>
+            </div>
+            <div class="left-navigation-item link" to="/messages.html">
+                <i class="messages-icon"></i>
+                <span>Messages</span>
+            </div>
+            <div class="left-navigation-item link" to="/resource.html">
+                <i class="icon fas fa-folder"></i>
+                <span>Resource</span>
+            </div>
+            <div class="left-navigation-item link" to="/schedule.html">
+                <i class="video-icon"></i>
+                <span>Schedule</span>
+            </div>
+            <div class="left-navigation-item link" to="/">
+                <i class="logout-icon"></i>
+                <span>Logout</span>
+            </div>
+        </div>
+    </nav>
+    <main class="main">
+        <nav class="top-navigation">
+            <h2 class="title">Dashboard</h2>
+            <div class="top-left-nav-items">
+                <img src="public/img/face.jpg" class="profile-picture link" to="/profile.html" />
+                <div class="notification-bell">
+                    <i class="bell-icon fas fa-bell"></i>
+                </div>
+            </div>
+        </nav>
+        <section class="container">
+            <span class="discard link" to='/forum.html'><i class="fas fa-times"></i> Discard</span>
+            <form method="post" class="form">
+                <input type="text" placeholder="Enter title" class="form-field" />
+                <input type="text" name="tag1" class="tag1" hidden />
+                <input type="text" name="tag2" class="tag2" hidden />
+                <div class="form-field form-select" max-items="2">
+                    <span class="select-category">Select Category</span>
+                    <i class="fas fa-chevron-down select-category-icon"></i>
+                    <div class="tag tag-1-label"></div>
+                    <div class="tag tag-2-label"></div>
+                </div>
+                <textarea cols="80" rows="12" placeholder="Type your message here" class="message-field"></textarea>
+                
+                <div>
+                    <button type="submit" class="submit-button"><p class="plus-icon"></p> Create Post</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal-container">
+        <div class="modal">
+            <div class="modal-header">
+                <div>
+                    <p class="modal-title">Select Category</p>
+                    <p class="modal-subtitle max-selection">Select a topic category to help people understand the topic of your thread. You  can only select a max number of <span></span></p>
+                </div>
+                <button class="modal-primary-button">Done</button>
+            </div>
+            <div class="modal-body">
+                <p class="max-selection selection-error" hidden>Select only <span></span> categories</p>
+                <div class="tags-group">
+                    <p class="modal-tag-group-title">Programming Language</p>
+                    <div class="tags">
+                        <div class="tag">Kotlin</div>
+                        <div class="tag">PHP</div>
+                        <div class="tag">NodeJs</div>
+                        <div class="tag">C++</div>
+                        <div class="tag">C#</div>
+                        <div class="tag">Java</div>
+                        <div class="tag">HTML5</div>
+                        <div class="tag">CSS3</div>
+                        <div class="tag">Javascript</div>
+                        <div class="tag">Ruby</div>
+                        <div class="tag">Django</div>
+                        <div class="tag">React</div>
+                        <div class="tag">Angular</div>
+                    </div>
+                </div>
+
+                <div class="tags-group">
+                    <p class="modal-tag-group-title">Product Design</p>
+                    <div class="tags">
+                        <div class="tag">UX</div>
+                        <div class="tag">UI</div>
+                        <div class="tag">Graphics</div>
+                        <div class="tag">Branding</div>
+                        <div class="tag">Motion</div>
+                        <div class="tag">Product</div>
+                    </div>
+                </div>
+
+                <div class="tags-group">
+                    <p class="modal-tag-group-title">DevOps</p>
+                    <div class="tags">
+                        <div class="tag">Nginx</div>
+                        <div class="tag">Kafka</div>
+                        <div class="tag">RabbitMQ</div>
+                        <div class="tag">AWS EB</div>
+                        <div class="tag">Memcache</div>
+                        <div class="tag">Gunicorn</div>
+                        <div class="tag">CronJobs</div>
+                        <div class="tag">CronTabs</div>
+                        <div class="tag">AWS EC2</div>
+                    </div>
+                </div>
+
+                <div class="tags-group">
+                    <p class="modal-tag-group-title">Marketing</p>
+                    <div class="tags">
+                        <div class="tag">Social</div>
+                        <div class="tag">Graphics</div>
+                        <div class="tag">Instagram</div>
+                        <div class="tag">Facebook</div>
+                        <div class="tag">Twitter</div>
+                        <div class="tag">LinkedIn</div>
+                        <div class="tag">Youtube</div>
+                        <div class="tag">Reddit</div>
+                        <div class="tag">Pinterest</div>
+                    </div>
+                </div>
+
+                <div class="tags-group">
+                    <p class="modal-tag-group-title">Content Designer</p>
+                    <div class="tags">
+                        <div class="tag">Content</div>
+                        <div class="tag">Hierarchy</div>
+                        <div class="tag">Information</div>
+                        <div class="tag">Discord</div>
+                        <div class="tag">Medium</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Ends -->
+</body>
+</html>

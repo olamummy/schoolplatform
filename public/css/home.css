@@ -1,0 +1,123 @@
+.container {
+    padding-right: 100px;
+}
+.card {
+    width: 305px;
+    height: 145px;
+    padding: 10px 18px;
+}
+.card-title, .card-title-sm {
+    padding-left: 12px;
+}
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--white);
+}
+.card-title-sm {
+    margin: 10px 0;
+    font-size: 14px;
+    color: var(--white);
+}
+.card-icon {
+    width: 30px;
+    height: 30px;
+    padding: 35px 40px;
+    border-radius: 7px;
+    transform: scale(.7);
+    background-position: center;
+    background-color: var(--white);
+}
+.assignment-card {
+    background-color: #A7EFF2;
+}
+.school-card {
+    background-color: #A5ECC6;
+}
+.course-card {
+    background-color: #A5ECC6;
+}
+.top-container {
+    display: flex;
+    margin-top: 28px;
+    justify-content: space-between;
+}
+.recent-post-action-container {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+.recent-post-title,
+.calendar-title {
+    font-size: 20px;
+}
+.recent-post-action {
+    font-size: 13px;
+    cursor: pointer;
+}
+.recent-post-title, 
+.recent-post-action,
+.calendar-title,
+.special-arrow-icon {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+.main-container {
+    display: flex;
+}
+.calendar-container {
+    margin-left: 52px;
+    margin-top: 32px;
+}
+.tables-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: -10px;
+}
+.table-container {
+    width: 36.8vw;
+    display: flex;
+    padding: 30px 18px;
+    margin: 15px 10px;
+    border-radius: 7px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F9FAFC;
+}
+.table-header {
+    padding-left: 12px;
+    align-self: flex-start;
+}
+.table {
+    width: 33vw;
+    color: #819EB0;
+    margin-top: 13px;
+    background-color: #fff;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+td, th {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+tr:nth-child(even) {
+    background-color: #ddd;
+}
+td a {
+    color: var(--normal-color);
+}
+td a:hover {
+    color: blue;
+}
+.table-title {
+    color: #053F63;
+    margin-bottom: 10px;
+}
+.table-subtitle {
+    color: #819EB0;
+    font-size: 14px;
+}

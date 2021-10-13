@@ -1,0 +1,192 @@
+.container {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.back-button-container {
+    display: flex;
+    font-size: 15px;
+    cursor: pointer;
+    align-items: center;
+    color: var(--secondary-color);
+}
+.back-button-container:hover {
+    color: var(--primary-color);
+}
+.back-button-container i {
+    font-size: 19px;
+    margin-right: 5px;
+}
+.assignment-title {
+    color: rgba(5, 63, 99, 0.9);
+    font-size: 22px;
+    font-weight: 600;
+    margin: 35px 0;
+}
+.post {
+    background-color: inherit;
+    padding: 0;
+    width: 75vw;
+}
+.answer-container {
+    width: 75vw;
+    display: flex;
+    color: #819EB0;
+    align-items: center;
+    justify-content: center;
+}
+.answer-container i {
+    cursor: pointer;
+}
+.answer {
+    width: 70vw;
+    padding: 18px;
+}
+.answer-container {
+    border: 2px solid var(--grey);
+    overflow: hidden;
+    margin-top: 30px;
+    padding: 2px;
+}
+.answer {
+    border: 0;
+    outline: 0;
+}
+.doc-icon {
+    background-color: #D2F6E3;
+    padding: 30px 35px;
+    cursor: pointer;
+}
+.doc-icon,
+.answer-container,
+.submit-button {
+    border-radius: 5px 0px 5px 5px;
+}
+.submit-button {
+    padding: 15px 80px;
+    border: 0;
+    cursor: pointer;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+.commenter-picture {
+    width: 30px;
+    border-radius: 20px;
+}
+.commenter {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(5, 63, 99, 0.8);
+    cursor: pointer;
+    margin-left: 10px; 
+}
+.comment {
+   margin: 20px 50px;
+}
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+}
+.comment-header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.comment-body {
+    width: 60vw;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 50px;
+    line-height: 20px;
+    color: rgb(129, 158, 176);
+    font-family: 'Poppins', sans-serif;
+}
+.comment-footer {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.reply-comment {
+    display: flex;
+    height: 50px;
+    user-select: none;
+    align-items: center;
+}
+.reply-comment,
+.comments-count {
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 50px;
+    text-align: center;
+    color: rgb(129, 158, 176);
+}
+.comments-count {
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+.comments-count:hover {
+    color: #fff;
+}
+.comments-count i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+.reply-input-container {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    border: 2px solid var(--grey);
+    animation: entrance .3s ease-in forwards;
+}
+.reply-input  {
+    border: 0;
+    outline: 0;
+    width: 370px;
+    padding: 10px;
+    overflow: hidden;
+    align-self: flex-start;
+}
+.comment-reply {
+    padding-right: 0;
+    margin-right: 0;
+    margin-top: 30px;
+}
+.comment-replies {
+    animation: fadein .3s ease-in forwards;
+}
+.hidden {
+    display: none;
+}
+@keyframes entrance {
+    from {
+        width: 100px;
+    }
+    to {
+        width: 400px;
+    }
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
